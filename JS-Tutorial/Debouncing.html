@@ -1,0 +1,88 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="search" id="one">
+
+    <script>
+       
+        let timeout;
+        let input=document.getElementById("one");
+        input.addEventListener("input", function(event)
+
+    {
+        clearTimeout(timeout);
+            timeout=setTimeout(()=> console.log( event.target.value),1000);
+    });
+
+    </script>
+
+</body>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            height: 2000px;
+        }
+    </style>
+</head>
+<body>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eius consequatur, illo velit alias natus voluptatum obcaecati vitae autem voluptates a, labore, adipisci fuga nulla ducimus minus quo fugit possimus?</p>
+
+    <script>
+
+        let lastScrollTime=0;
+        window.addEventListener('scroll', function()
+    {
+        const now = Date.now();
+        if(now - lastScrollTime  > 1000)
+    {
+        console.log('scrolling');
+        lastScrollTime=now;
+    }
+    });
+    </script>
+</body>
+</html>
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            height: 2000px;
+        }
+    </style>
+</head>
+<body>
+
+    <p id="one">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt nisi laboriosam consectetur nihil magnam cum quisquam, impedit vero optio non accusantium delectus quae nam id nostrum fugit perspiciatis ex? Corrupti?</p>
+      <script>
+       
+       window.onscroll = function()
+       {
+        console.log("scrolling");
+       }
+      </script>
+</body>
+</html> -->
