@@ -1,0 +1,225 @@
+<!-- 4. window Events (11 events) -->
+
+
+
+<!-- // 1] onload -> before display the content the alert msg will comes -->
+
+<!-- <!DOCTYPE html>                         
+<html>
+<body>
+    <h2>Window Load Event Example</h2>
+
+    <script>
+        window.onload = function() {
+            alert("Page is fully loaded!");
+        }
+    </script>
+</body>
+</html> -->
+
+
+
+
+<!-- // 2] onresize -> when we have to minimize and maximize the window size   -->
+
+<!-- <!DOCTYPE html>                                     
+<html>
+<body>
+    <h2>Resize the Window</h2>
+
+    <script>
+        window.onresize = function() {
+            console.log("Window resized!");
+        }
+    </script>
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<h2>Resize the window to see the effect</h2>
+<p id="size"></p>
+
+<script>
+    window.onresize = function() {
+        let width = window.innerWidth;
+        let height = window.innerHeight;
+
+        document.getElementById("size").innerText =
+            "Width: " + width + "px, Height: " + height + "px";
+    };
+</script>
+
+</body>
+</html> -->
+
+
+<!-- 
+// 3] onscroll -> The scroll option comes in the browser -->
+
+
+<!-- <!DOCTYPE html>                           
+<html>
+<body style="height: 1500px;">
+    <h2>Scroll the page Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta a eius delectus placeat labore, reprehenderit commodi. Accusantium nam quaerat voluptates quasi inventore optio ad debitis itaque soluta. Beatae, animi aut?</h2>
+
+    <script>
+        window.onscroll = function() {
+            console.log("Scrolling...");
+        }
+    </script>
+</body>
+</html> -->
+
+
+
+
+ <!-- // 4] onfocus -> when we have to go another tab and again comes to windowevent tab in the console print how many times when you enter in this tab they display the numbers -->
+
+<!-- <!DOCTYPE html>                           
+<html>
+<body style="height:1500px;">
+    <h2>Scroll the page</h2>
+
+   <script>
+    window.onfocus = function() {
+        console.log("Window is active now");
+    };
+</script>
+
+</body>
+</html> -->
+
+
+
+<!-- 5] onblur -> when you switch to another tab window loss the focus -->
+
+<!-- <!DOCTYPE html>                        
+<html>
+<body style="height:1500px;">
+    <h2>Scroll the page </h2>
+
+   <script>
+    window.onblur = function() {
+        console.log("Window is not active");
+    };
+</script>
+
+</body>
+</html> -->
+
+
+<!-- 6] onbeforeunload -> when we have to refresh (ctrl + r) the alert msg will comes load the page -->
+
+<!-- <!DOCTYPE html>                                                   
+<html>
+<body>
+<script>
+    window.onbeforeunload = function() {
+        return "Are you sure you want to leave?";
+    }
+</script>
+
+<h2>Try closing or refreshing this page</h2>
+</body>
+</html> -->
+
+
+
+
+<!-- 7] onerror -> before display the information the error msg will comes as alert same as onload -->
+
+<!-- <!DOCTYPE html>
+<html>
+<body style="height:1500px;">
+    <h2>Scroll the page</h2>
+
+ <script>
+    window.onerror = function(message, source, line) {
+        alert("Error happened: " + message);
+    };
+
+    testFunction(); // This will cause an error
+</script> -->
+
+
+
+
+
+<!-- 8] -> onhashchange -> url has changes the #values when you click on the buttons -->
+
+<!-- <!DOCTYPE html>
+<html>
+<body style="height:1500px;">
+    <h2>Scroll the page</h2>
+
+<script>
+    window.onhashchange = function() {
+        console.log("Hash changed!");
+    };
+</script>
+
+<a href="#home">Home</a>
+<a href="#about">About</a>
+</body>
+</html> -->
+
+
+
+
+<!-- 9] -> ononline -> when you turn off and again on the wifi or mobile data the alert msg will comes -->
+
+<!-- 
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+    window.ononline = function() {
+        alert("Internet is connected again!");
+    }
+</script>
+
+<h2>Disconnect and reconnect internet to test</h2>
+</body>
+</html>  -->
+
+
+
+<!-- 10] -> onoffline -> when you turn the wifi or mobile data the alert msg will comes -->
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+<script>
+    window.onoffline = function() {
+        alert("Internet connection lost!");
+    }
+</script>
+
+<h2>Turn off Wi-Fi to test this</h2>
+</body>
+</html> -->
+
+
+
+<!-- 11] -> onunload -> when before you close the tab the msg will display on the console you at the last time -->
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+<script>
+    window.onunload = function() {
+        console.log("Page is closing...");
+    }
+</script>
+
+<h2>Close the tab and check console</h2>
+</body>
+</html> -->
+
+
+
+
