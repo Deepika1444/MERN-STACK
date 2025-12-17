@@ -1,0 +1,86 @@
+
+
+-- -- 1} PRIMARY KEY AUTO INCREMENT-> it is only apply 1 column and it doesn't null values ,,
+-- -- or else we use auto increment(is only apply for integers not for varchar),,
+-- or else we pass the data by manually 
+
+
+create table student (
+     id int primary key AUTO_INCREMENT,
+     name varchar(100),
+     email varchar(100),
+     password varchar(100));
+
+insert into student (name,email,password)
+     values("deepu","d@gmail.com",435678),
+     ("raju","r@gmail.com",987654);
+
+
+
+-- 2} UNIQUE -> it is apply more than 1column ,, it allow the null value,, but it did not taken repeated data
+
+create table teacher(
+     id int primary key auto_increment,
+     name varchar(100),
+     email varchar(300) UNIQUE, 
+     password varchar(100));
+
+
+insert into teacher(name,email,password)
+    values("arjun","arjun@gmail.com",345678),
+    ("yadi","yadi@gmail.com",987654),
+    ("arjun","arjun@gmail.com",345678);
+
+
+
+-- -- 3} NOT NULL -> By default all the columns taken null values but we have to mention in the constraint name NOT NULL 
+-- it doesnt taken null value or else we pass the data by manual 
+
+create table parent(
+     id int primary key auto_increment,
+     name varchar(100) NOT NULL,
+     email varchar(300) UNIQUE, 
+     password varchar(100) UNIQUE);
+
+/*comes error for this insert*/
+insert into parent(name,password)          
+    values("arjun",3456789),
+    ("yadi",9871654),
+    ("arun","arun@gmail.com",345678);
+
+/* doesn't comes error*/
+insert into parent(name,email,password)
+     values('deepika','d@gmail.com',56789),
+     ('geethu','g@gmail.com',8765478);
+
+
+
+-- 4} DEFAULT -> you have to mention the default constraint we dont mention the column name in the insert     
+
+create table admin(
+     id int,  
+     login varchar(100) DEFAULT "Deepu455455");
+
+insert into admin(id)
+     values(1),
+           (2),
+           (3);
+
+
+-- 5} INDEX -> index are used to retriew the data very quickly in only select option we use for the particular column 
+-- they will be search 1row,2row,3row like that,,but we use index directly jump to which row we want to search. 
+
+create table student (
+     id int primary key AUTO_INCREMENT,
+     name varchar(100),
+     email varchar(100),
+     password varchar(100));
+
+insert into student (name,email,password)
+     values("deepu","d@gmail.com",435678),
+     ("raju","r@gmail.com",987654);
+
+REATE INDEX idx_email ON student(email);
+
+select * from student where email="r@gmail.com";
+
