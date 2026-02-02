@@ -1,0 +1,88 @@
+// 10 HigherOrderFunctions
+
+
+// let arr=[1,2,3,4,5];        //foreach
+// arr.forEach(function(num)
+// {
+//     console.log(num * 2);
+// }); 
+
+
+
+// let arr=[1,2,3,4,5];         //map
+// let out=arr.map(function(num)
+// {
+//     return num - 2;
+// });
+// console.log(out);
+
+
+
+// let arr=[1,2,3,4,5];       //filter
+// let out=arr.filter(function(num)
+// {
+//     return num % 2 ==0;
+// });
+// console.log(out);
+
+
+
+// let arr=[1,2,3,4,5];         //reduce
+// let out=arr.reduce(function(total,num)
+// {
+//     return num+total;
+// });
+// console.log(out);
+
+
+
+// let arr=[1,2,3,4,5];           //reduceright
+// let out=arr.reduceRight(function(total,num)
+// {
+//     return total - num;
+// });
+// console.log(out);
+
+
+// let arr=[1,2,3,4,5];          //find
+// let out=arr.find(function(num)
+// {
+//     return num % 2 ==0;
+// });
+// console.log(out);
+
+
+
+// let arr=[1,2,3,4,5];        //some
+// let out=arr.some(function(num)
+// {
+//     return num % 2 ==0;
+// });
+// console.log(out);
+
+
+
+// let arr=[1,2,3,4,5];        //every
+// let out=arr.every(function(num)
+// {
+//     return num % 2 ==0;
+// });
+// console.log(out);
+
+
+
+// let arr=[1,2,3,4,5];       //flatmap
+// let out=arr.flatMap(function(num)
+// {
+//     return [num,num * 2];
+// });
+// console.log(out);
+
+
+
+// let arr=[10,30,40,60,20,5];      //sort
+// let out=arr.sort(function(a,b)
+// {
+//     return a - b;
+// });
+// console.log(out);

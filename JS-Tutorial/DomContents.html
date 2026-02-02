@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Dom Contents</h1>
+    <div id="one">
+
+    <p id="para" class="hai" title="Deeepu" style="color: rgb(224, 17, 17); align-items: center;">This is Paragraph first</p>
+
+    <p id="para1" class="hai" title="Deeepu" style="color: rgb(224, 17, 17); align-items: center;">This is Paragraph second</p>
+
+    <p id="para2"  class="hai" title="Deeepu" style="color: rgb(224, 17, 17); align-items: center;">This is Paragraph third</p>
+
+    </div>
+
+    <button onclick="getTitle()">click me</button>
+     
+    <!-- <div id="container">
+         hai my name is Deepu 
+
+    </div>
+    <div id="container 1">
+        
+    </div>  -->
+
+  
+
+    <script>
+
+
+        // 1. creating  an elements
+
+
+        // function getTitle()
+        // {
+        //     let p=document.createElement("div");
+        //     p.innerText="Hello";
+        //     p.style="background:red";
+        //     document.body.appendChild(p);
+        // }
+
+
+
+
+        // 2. appending the Elements
+
+         
+        // function getTitle()                                    // appendchild  -> add the content at the bottom
+        // {
+        //     let p=document.createElement("div");
+        //     p.innerText="Hello";
+        //     p.style="background:red";
+        //     document.body.appendChild(p);
+        // }
+
+
+
+        //    function getTitle()                                 //append   ->add text + multiple elements
+        // {
+        //     let p=document.createElement("div");
+        //     p.innerText="Hello";
+        //     p.style="background:red";
+        //     document.body.append(p,"Hai my name is Deepika");
+        // }
+
+
+
+
+        //  function getTitle()                                   //prepend    ->add the content at the bottom
+        // {
+        //     let p=document.createElement("div");
+        //     p.innerText="Hello";
+        //     p.style="background:red";
+        //     document.body.prepend(p);
+        // }
+
+        
+
+
+        // 3. removing the elements   
+        
+        // function getTitle()                   //remove element using getelementbyid ,queryselector=> it remove only 1 paragraph 
+        // {
+        //     let p=document.getElementById("para");
+        //     p.remove();
+              
+        // }
+
+          
+
+        // function getTitle()                          //remove element using getelementbyclassname , getelementbytagname,queryselectorall=> it remove 1 or more paragraph
+        // {
+        //     let p=document.getElementsByClassName("hai");
+        //     for(let i=p.length-1;i>=0;i--)
+        
+        
+        //     {
+        //         p[i].remove();
+        //     }
+            
+        // }
+
+
+
+
+        // function getTitle()                          //removechild() with parent using <div id="one"> as a parent tag using <p> tag as a child tag so you call the div id tag inside the div ,all the paragraph removed
+        // {
+        //     let a=document.getElementById("one");
+        //     let p=document.getElementById("para");
+        //     a.removeChild(p);
+        // }
+
+
+
+        // function getTitle()
+        // {
+        //     let a=document.getElementById("one");               //removechild() with parent using class method ,instead of we use tag method,queryselector all
+        //     let p=a.getElementsByClassName("hai");
+        //     for(let i=p.length-1;i>=0;i--)
+        // {
+        //    a.removeChild(p[i]);
+        // }
+        // }
+  
+
+
+
+    // 4. modifying elements
+
+    //   function getTitle()
+    //   {
+    //     let p=document.getElementById("para");
+    //     p.innerHTML="<p>HAi</p>";
+    //     p.style="background:red; color:blue";
+    //   }
+
+
+
+    // 5. modifying attributes
+
+    //   function getTitle()                                     //set attribute => no attributes are available in <p> tag we have to add the attributes in <p> tag
+    //   {                                                        //we can add ,change the attributes
+    //     let p=document.getElementById("para");
+    //     p.setAttribute("style","color:red; background:blue;");
+    //     p.setAttribute("title","Hello");
+    //   }           
+
+
+    //  function getTitle()                                       //get attribute => already attributes are available in <p> tag we want to press the title button any alert msg will comes 
+    //  {                                                         // we can read and get the attributes
+    //     let p= document.getElementById("para");
+    //     let value=p.getAttribute("title");
+    //     alert(value);
+    //     // p.innerText="value";
+        
+    //  }
+     
+
+
+//    function getTitle()                         //remove attributes =>when we have to click the title button the style will automatically gone
+//    {
+//     let p=document.getElementById("para");
+//     p.removeAttribute("style");
+//    }                              
+    
+
+
+    
+
+
+       
+
+
+
+        
+
+
+    </script>
+</body>
+</html>

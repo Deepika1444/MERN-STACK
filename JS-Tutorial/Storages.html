@@ -1,0 +1,102 @@
+<!-- //session storage -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <button onclick="saveToSession('city','new york')">Save to session storage</button> 
+   <button onclick="alert(getFromSession('city'))">get from session storage</button> 
+   <button onclick="removeFromSession('city')">remove from session storage</button> 
+
+   <script>
+
+    function saveToSession(key,value)
+    {
+        sessionStorage.setItem(key,value);
+    }
+
+     function getFromSession(key)
+    {
+        return sessionStorage.getItem(key);
+    }
+
+
+      function removeFromSession(key)
+    {
+        sessionStorage.removeItem(key);
+    }
+   </script>
+</body>
+</html>
+
+
+
+
+<!-- local storage -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <button onclick="saveToLocal('city','new york')">Save to local storage</button> 
+   <button onclick="alert(getFromLocal('city'))">get from local storage</button> 
+   <button onclick="removeFromLocal('city')">remove from local storage</button> 
+
+   <script>
+
+    function saveToLocal(key,value)
+    {
+        localStorage.setItem(key,value);
+    }
+
+     function getFromLocal(key)
+    {
+        return localStorage.getItem(key);
+    }
+
+
+      function removeFromLocal(key)
+    {
+        localStorage.removeItem(key);
+    }
+   </script>
+</body>
+</html> -->
+
+
+
+<!-- cookies -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<button onclick="setCookie()">Save Cookie</button>
+<button onclick="getCookie()">Get Cookie</button>
+<button onclick="deleteCookie()">Delete Cookie</button>
+
+<script>
+function setCookie() {
+  document.cookie = "city=NewYork";
+}
+
+function getCookie() {
+  alert(document.cookie);
+}
+
+function deleteCookie() {
+  document.cookie = "city=; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
+}
+</script>
+
+</body>
+</html> -->

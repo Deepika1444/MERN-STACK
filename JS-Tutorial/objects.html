@@ -1,0 +1,93 @@
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<button id="btn">Click Me</button>
+
+<script>
+let b = document.getElementById("btn");
+
+b.addEventListener("click", function(e) {
+    console.log(e);        // Full event object
+    console.log(e.type);   // Event type: click
+    console.log(e.target); // Element clicked
+});
+</script>
+
+</body>
+</html> -->
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<div id="parent" style="padding:30px; background:lightblue;">
+    <button id="child">Click Me</button>
+</div>
+
+<script>
+document.getElementById("child").addEventListener("click", () => {
+    alert("Child Clicked");
+});
+
+document.getElementById("parent").addEventListener("click", () => {
+    alert("Parent Clicked");
+});
+</script>
+
+</body>
+</html> -->
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<div id="parent" style="padding:30px; background:lightgreen;">
+    <button id="child">Click Me</button>
+</div>
+
+<script>
+document.getElementById("parent").addEventListener("click", () => {
+    alert("Parent Captured");
+}, true); // capturing
+
+document.getElementById("child").addEventListener("click", () => {
+    alert("Child Clicked");
+});
+</script>
+
+</body>
+</html> -->
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="parent" style="padding:30px; background:lightgreen;">
+    <button id="child">Click Me</button>
+</div>
+
+<script>
+document.getElementById("child").addEventListener("click", function(e) {
+    // e.stopPropagation();  
+    alert("Child Clicked");
+});
+
+document.getElementById("parent").addEventListener("click", () => {
+    alert("Parent Clicked");
+});
+</script>
+
+</body>
+</html>
